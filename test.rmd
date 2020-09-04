@@ -1,13 +1,48 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 
-
+aa
 ```{r}
 a <- 1
 b <- 1
 c <- -1
+```
+
+```{r}
+record <- list()
+
+record[['name']] <- 'John Doe'
+record[['student_id']] <- 1234
+record[['grades']] <- c('95','82','91','97','93')
+record[['final_grade']] <- 'A'
+record[['student_id']] <- 1234
+
+record
+class(record)
+
+```
+
+```{r}
+record$student_id
+
+```
+
+
+```{r}
+record2 <- list()
+
+record2[[1]] <- 'John Doe'
+record2[[2]] <- 1234
+record2[[3]] <- c('95','82','91','97','93')
+record2[[4]] <- 'A'
+record2[[5]] <- 1234
+
+record2
+
 ```
 
