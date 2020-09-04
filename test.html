@@ -1641,6 +1641,53 @@ summary {
 <pre class="r"><code>a &lt;- 1
 b &lt;- 1
 c &lt;- -1</code></pre>
+<pre class="r"><code>record &lt;- list()
+
+record[[&#39;name&#39;]] &lt;- &#39;John Doe&#39;
+record[[&#39;student_id&#39;]] &lt;- 1234
+record[[&#39;grades&#39;]] &lt;- c(&#39;95&#39;,&#39;82&#39;,&#39;91&#39;,&#39;97&#39;,&#39;93&#39;)
+record[[&#39;final_grade&#39;]] &lt;- &#39;A&#39;
+record[[&#39;student_id&#39;]] &lt;- 1234
+
+record</code></pre>
+<pre><code>## $name
+## [1] &quot;John Doe&quot;
+## 
+## $student_id
+## [1] 1234
+## 
+## $grades
+## [1] &quot;95&quot; &quot;82&quot; &quot;91&quot; &quot;97&quot; &quot;93&quot;
+## 
+## $final_grade
+## [1] &quot;A&quot;</code></pre>
+<pre class="r"><code>class(record)</code></pre>
+<pre><code>## [1] &quot;list&quot;</code></pre>
+<pre class="r"><code>record$student_id</code></pre>
+<pre><code>## [1] 1234</code></pre>
+<pre class="r"><code>record2 &lt;- list()
+
+record2[[1]] &lt;- &#39;John Doe&#39;
+record2[[2]] &lt;- 1234
+record2[[3]] &lt;- c(&#39;95&#39;,&#39;82&#39;,&#39;91&#39;,&#39;97&#39;,&#39;93&#39;)
+record2[[4]] &lt;- &#39;A&#39;
+record2[[5]] &lt;- 1234
+
+record2</code></pre>
+<pre><code>## [[1]]
+## [1] &quot;John Doe&quot;
+## 
+## [[2]]
+## [1] 1234
+## 
+## [[3]]
+## [1] &quot;95&quot; &quot;82&quot; &quot;91&quot; &quot;97&quot; &quot;93&quot;
+## 
+## [[4]]
+## [1] &quot;A&quot;
+## 
+## [[5]]
+## [1] 1234</code></pre>
 
 
 
